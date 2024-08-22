@@ -10,9 +10,7 @@ if 'lives' not in st.session_state:
 
 lives = st.session_state.lives
 
-st.write(f"Lives remaining: {lives}")
-
-love = st.slider("", 0, 100, 50)
+love = st.slider(f"Lives remaining: {lives}", 0, 100, 50)
 
 if 'random_int' not in st.session_state:
     st.session_state.random_int = np.random.randint(0, 100)
