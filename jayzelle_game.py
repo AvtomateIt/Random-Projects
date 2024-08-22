@@ -33,10 +33,10 @@ if lives != 0:
             st.session_state.lives = 10
             st.session_state.random_int = np.random.randint(0,100)
         if love < correct:
-            st.error("Higher!", icon="⬆️")
+            st.info("Higher!", icon="⬆️")
             st.session_state.lives -= 1
         if love > correct:
-            st.error("Lower!", icon="⬇️")
+            st.info("Lower!", icon="⬇️")
             st.session_state.lives -= 1
 else:
     st.error(f"Game over! The correct answer is {correct}!", icon="🤦🏻‍♀️")
