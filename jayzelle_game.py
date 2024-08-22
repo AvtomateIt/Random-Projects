@@ -64,4 +64,3 @@ if "top" in st.session_state:
     ### :rainbow[Top Scorer]
     """)
     st.write(f"{st.session_state.top['Name']}, lives remaining: {st.session_state.top['Lives']}, message: {st.session_state.top['Message']}")
-    st.rerun()
